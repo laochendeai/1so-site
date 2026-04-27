@@ -44,15 +44,10 @@ jobs:
             };
             await ensureLabel("geo-audit", "1f7a4d", "Automated GEO audit reports");
             await ensureLabel("daily-task", "315d96", "Daily site improvement task");
-            const existing = await github.rest.issues.listForRepo({
-              owner,
-              repo,
-              filter: "all",
-              state: "open",
-              labels: "geo-audit",
-              per_page: 20
+            const existing = await github.rest.search.issuesAndPullRequests({
+              q: `repo:${owner}/${repo} is:issue is:open label:geo-audit "${title}"`
             });
-            const sameDay = existing.data.find((issue) => issue.title === title);
+            const sameDay = existing.data.items.find((issue) => issue.title === title);
             if (sameDay) {
               await github.rest.issues.update({
                 owner,
