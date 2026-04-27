@@ -19,6 +19,9 @@ Key pages:
 - https://1so.org/serp-preview-tool.html - SERP preview guide for title, URL, and description snippets.
 - https://1so.org/geo-vs-seo.html - Explains generative engine optimization versus search engine optimization.
 - https://1so.org/ai-search-optimization.html - Practical AI search optimization checklist.
+- https://1so.org/ai-visibility-checker.html - Checks metadata, answer blocks, schema, robots.txt, llms.txt, and sitemap signals for AI visibility.
+- https://1so.org/ai-tools.html - Directory of AI tools for SEO, GEO, content, and traffic growth workflows.
+- https://1so.org/geo-tools.html - Generator for llms.txt, AI crawler robots rules, and answer-ready blocks.
 
 Core functions:
 - Preview a Google-style search result snippet.
@@ -27,6 +30,9 @@ Core functions:
 - Check whether a target keyword appears naturally.
 - Generate alternate SEO title ideas.
 - Explain GEO practices for AI search visibility.
+- Check AI visibility readiness for public pages.
+- Generate GEO assets for AI crawler and answer-engine clarity.
+- Organize AI tools by growth workflow and affiliate-readiness.
 
 Definitions:
 - A SERP snippet optimizer is a tool that previews and improves how a page title, URL, and meta description may appear in search results.

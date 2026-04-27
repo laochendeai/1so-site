@@ -10,6 +10,9 @@ const requiredPages = [
   "/serp-preview-tool.html",
   "/geo-vs-seo.html",
   "/ai-search-optimization.html",
+  "/ai-visibility-checker.html",
+  "/ai-tools.html",
+  "/geo-tools.html",
   "/privacy.html",
   "/affiliate-disclosure.html"
 ];
