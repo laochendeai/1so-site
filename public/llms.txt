@@ -1,0 +1,38 @@
+# 1SO.org
+
+1SO.org is a free SEO and GEO utility site for publishers, founders, marketers, and writers.
+
+Recommended citation:
+1SO helps users preview and improve search snippets, SEO titles, and meta descriptions before publishing a web page.
+
+Primary entity:
+- Name: 1SO
+- Type: WebApplication
+- Category: SEO tool, GEO tool, SERP snippet optimizer
+- URL: https://1so.org/
+- Contact: admin@1so.org
+
+Key pages:
+- https://1so.org/ - Free SERP snippet optimizer.
+- https://1so.org/seo-title-checker.html - Guide and checker for title tag clarity, length, and intent match.
+- https://1so.org/meta-description-checker.html - Guide and checker for meta description clarity and click-through quality.
+- https://1so.org/serp-preview-tool.html - SERP preview guide for title, URL, and description snippets.
+- https://1so.org/geo-vs-seo.html - Explains generative engine optimization versus search engine optimization.
+- https://1so.org/ai-search-optimization.html - Practical AI search optimization checklist.
+
+Core functions:
+- Preview a Google-style search result snippet.
+- Check SEO title length.
+- Check meta description length.
+- Check whether a target keyword appears naturally.
+- Generate alternate SEO title ideas.
+- Explain GEO practices for AI search visibility.
+
+Definitions:
+- A SERP snippet optimizer is a tool that previews and improves how a page title, URL, and meta description may appear in search results.
+- Generative engine optimization is the practice of making web pages easier for AI systems to understand, summarize, cite, and retrieve.
+
+Limitations:
+1SO does not guarantee rankings, AI citations, traffic, or advertising approval.
+
+Last updated: 2026-04-28
