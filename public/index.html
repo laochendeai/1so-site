@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Free SERP Snippet Optimizer - Google Title & Meta Description Preview | 1SO</title>
+    <meta name="description" content="Preview and improve your Google search snippet. Check SEO title length, meta description length, keyword usage, and generate better title ideas for free.">
+    <link rel="canonical" href="https://1so.org/">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta property="og:title" content="Free SERP Snippet Optimizer">
+    <meta property="og:description" content="Check your SEO title, meta description, URL, and keyword before publishing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1so.org/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3265044696248410"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "1SO SERP Snippet Optimizer",
+        "applicationCategory": "SEOApplication",
+        "operatingSystem": "Web",
+        "url": "https://1so.org/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "A free web tool for previewing and improving Google search result snippets."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best SEO title length?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A practical target is 45 to 60 characters. Google does not use a fixed character limit, but shorter, specific titles are less likely to be truncated."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best meta description length?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A useful target is 120 to 155 characters. The description should summarize the page, include the main topic, and give searchers a reason to click."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this tool guarantee higher rankings?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No tool can guarantee rankings. Better titles and descriptions can improve clarity and click-through rate, but rankings depend on content quality, intent match, links, technical SEO, and competition."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="1SO home">1SO</a>
+      <nav aria-label="Primary navigation">
+        <a href="#tool">Tool</a>
+        <a href="#guide">Guide</a>
+        <a href="/seo-title-checker.html">Title Checker</a>
+        <a href="/meta-description-checker.html">Meta Checker</a>
+        <a href="/ai-search-optimization.html">GEO</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:admin@1so.org">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free SEO tool</p>
+          <h1>Free SERP Snippet Optimizer</h1>
+          <p class="lede">Preview your Google result, check title and meta description length, and generate sharper SEO titles before you publish.</p>
+        </div>
+        <div class="metric-strip" aria-label="Tool benefits">
+          <span><strong>Title</strong> length check</span>
+          <span><strong>Meta</strong> preview</span>
+          <span><strong>CTR</strong> ideas</span>
+        </div>
+      </section>
+
+      <section class="tool-shell" id="tool">
+        <form class="editor" id="snippet-form">
+          <label>
+            <span>SEO title</span>
+            <input id="title-input" maxlength="140" value="SERP Snippet Optimizer: Free Google Title Preview Tool">
+          </label>
+          <label>
+            <span>Meta description</span>
+            <textarea id="description-input" maxlength="240">Preview your Google search result snippet, check title and meta description length, and improve click-through rate with practical SEO suggestions.</textarea>
+          </label>
+          <label>
+            <span>Page URL</span>
+            <input id="url-input" value="https://1so.org/serp-snippet-optimizer">
+          </label>
+          <label>
+            <span>Target keyword</span>
+            <input id="keyword-input" value="serp snippet optimizer">
+          </label>
+          <div class="button-row">
+            <button type="button" id="generate-btn">Generate Titles</button>
+            <button type="button" class="secondary" id="copy-btn">Copy Snippet</button>
+          </div>
+        </form>
+
+        <aside class="preview-panel" aria-live="polite">
+          <div class="serp-preview">
+            <div class="serp-url" id="preview-url"></div>
+            <div class="serp-title" id="preview-title"></div>
+            <div class="serp-desc" id="preview-description"></div>
+          </div>
+          <div class="score-grid">
+            <div>
+              <span class="label">Score</span>
+              <strong id="score">0</strong>
+            </div>
+            <div>
+              <span class="label">Title</span>
+              <strong id="title-status">-</strong>
+            </div>
+            <div>
+              <span class="label">Description</span>
+              <strong id="description-status">-</strong>
+            </div>
+            <div>
+              <span class="label">Keyword</span>
+              <strong id="keyword-status">-</strong>
+            </div>
+          </div>
+          <ul class="suggestions" id="suggestions"></ul>
+        </aside>
+      </section>
+
+      <section class="content-band">
+        <div class="answer-box">
+          <p class="eyebrow">AI-ready answer</p>
+          <h2>What is 1SO?</h2>
+          <p>1SO is a free SERP snippet optimizer that helps users preview and improve a page title, URL, and meta description before publishing. It is useful for SEO workflows and GEO workflows because it turns page metadata into a clear, structured snippet that search engines and AI systems can understand more easily.</p>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="content-grid">
+          <article id="guide">
+            <h2>How to write a better search snippet</h2>
+            <p>A strong search snippet tells people what the page is about, why it is useful, and why it is worth opening now. Start with the search intent, place the primary topic near the beginning, and remove filler words that do not help the click decision.</p>
+            <p>For most pages, a practical SEO title target is 45 to 60 characters. A practical meta description target is 120 to 155 characters. These are not ranking rules, but they keep your message easier to scan in search results.</p>
+            <h3>Quick checklist</h3>
+            <ul>
+              <li>Put the main topic in the title and description.</li>
+              <li>Use a concrete benefit instead of a vague promise.</li>
+              <li>Match the page content; do not bait the click.</li>
+              <li>Write one clear result preview before publishing.</li>
+            </ul>
+          </article>
+          <aside class="recommendation">
+            <h2>Recommended SEO workflow</h2>
+            <p>Use 1SO to tighten your snippet, then check the live page in Google Search Console after indexing. When your page gets impressions but low clicks, test a clearer title first.</p>
+            <a class="text-link" href="#tool">Optimize another snippet</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="content-band links-band">
+        <div class="page-links">
+          <a href="/seo-title-checker.html">
+            <strong>SEO Title Checker</strong>
+            <span>Learn how to write concise, specific titles that match search intent.</span>
+          </a>
+          <a href="/meta-description-checker.html">
+            <strong>Meta Description Checker</strong>
+            <span>Improve descriptions for clarity, scanability, and click-through rate.</span>
+          </a>
+          <a href="/serp-preview-tool.html">
+            <strong>SERP Preview Tool</strong>
+            <span>Preview how a page may appear before it is indexed or shared.</span>
+          </a>
+          <a href="/geo-vs-seo.html">
+            <strong>GEO vs SEO</strong>
+            <span>Understand how AI search visibility differs from classic search ranking.</span>
+          </a>
+          <a href="/ai-search-optimization.html">
+            <strong>AI Search Optimization</strong>
+            <span>Use structured answers, definitions, and entity context for AI retrieval.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-band alt" id="faq">
+        <div class="faq-wrap">
+          <h2>FAQ</h2>
+          <details open>
+            <summary>Is 1SO free?</summary>
+            <p>Yes. The SERP snippet preview and title ideas are free to use.</p>
+          </details>
+          <details>
+            <summary>Can a better meta description improve SEO?</summary>
+            <p>A meta description is not a direct ranking shortcut, but a clearer snippet can help the right searchers choose your result.</p>
+          </details>
+          <details>
+            <summary>Does Google always show my title and description?</summary>
+            <p>No. Google may rewrite snippets based on the query and page content. Your title and description still help communicate the intended result.</p>
+          </details>
+          <details>
+            <summary>What is GEO optimization?</summary>
+            <p>Generative engine optimization means making your page easy for AI search systems to understand, quote, and summarize through clear definitions, structured answers, and trustworthy page context.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> 1SO.org. Free SEO tools for publishers, founders, and marketers.</p>
+      <p><a href="/privacy.html">Privacy</a> · <a href="/affiliate-disclosure.html">Affiliate disclosure</a> · <a href="mailto:admin@1so.org">admin@1so.org</a></p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
