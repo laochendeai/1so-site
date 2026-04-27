@@ -47,6 +47,7 @@ jobs:
             const existing = await github.rest.issues.listForRepo({
               owner,
               repo,
+              filter: "all",
               state: "open",
               labels: "geo-audit",
               per_page: 20
