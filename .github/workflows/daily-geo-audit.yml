@@ -9,7 +9,6 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     permissions:
-      actions: write
       contents: read
       issues: write
     steps:
@@ -35,7 +34,7 @@ jobs:
             const title = `Daily GEO audit: ${today}`;
             const body = fs.readFileSync("geo-audit-report.md", "utf8");
             const { owner, repo } = context.repo;
-            const variableName = "GEO_AUDIT_LAST_ISSUE";
+            const rollingIssueNumber = 1;
             const ensureLabel = async (name, color, description) => {
               try {
                 await github.rest.issues.getLabel({ owner, repo, name });
@@ -46,25 +45,19 @@ jobs:
             };
             await ensureLabel("geo-audit", "1f7a4d", "Automated GEO audit reports");
             await ensureLabel("daily-task", "315d96", "Daily site improvement task");
-
-            let cached = null;
             try {
-              const variable = await github.rest.actions.getRepoVariable({ owner, repo, name: variableName });
-              cached = JSON.parse(variable.data.value);
-            } catch (error) {
-              if (error.status !== 404) throw error;
-            }
-
-            if (cached && cached.date === today && cached.issue_number) {
               await github.rest.issues.update({
                 owner,
                 repo,
-                issue_number: cached.issue_number,
+                issue_number: rollingIssueNumber,
                 title,
                 body,
-                state: "open"
+                state: "open",
+                labels: ["geo-audit", "daily-task"]
               });
               return;
+            } catch (error) {
+              if (error.status !== 404) throw error;
             }
 
             const created = await github.rest.issues.create({
@@ -76,12 +69,4 @@ jobs:
             });
             if (!created.data.number) {
               throw new Error("GitHub did not return an issue number for the daily GEO audit.");
-            }
-
-            const value = JSON.stringify({ date: today, issue_number: created.data.number });
-            try {
-              await github.rest.actions.updateRepoVariable({ owner, repo, name: variableName, value });
-            } catch (error) {
-              if (error.status !== 404) throw error;
-              await github.rest.actions.createRepoVariable({ owner, repo, name: variableName, value });
             }
